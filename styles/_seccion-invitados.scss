@@ -1,0 +1,26 @@
+.seccion__invitados {
+    & h2 {
+        margin: 0 16px 14px 16px;
+    }
+    .img__invitados {
+        display: flex;
+        & img {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 1025px) {
+        margin-top: 64px;
+            & h2 {
+                margin: 0 0 14px 200px;
+            }
+            .img__invitados-1,
+            .img__invitados-2 {
+                display: flex;
+                flex-flow: row nowrap;
+                height: 100%;
+                .img__invitados {
+                    height: 100%;
+                }
+            }
+    }
+}

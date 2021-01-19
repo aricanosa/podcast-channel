@@ -1,0 +1,44 @@
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 24px 0 31px 0;
+    gap: 16px;
+    & p{
+        width: 227px;
+        font-family: $font-primary;
+        font-size: $p-font-size-mobile;
+        color: $color-primary;
+        letter-spacing: 0;
+        line-height: $p-line-height-mobile;
+    }
+    .redes {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 38px;
+        i {
+            width: 16px;
+            color: $color-primary;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+    }
+
+    @media screen and (min-width: 1025px) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 36px 100px 31px 100px;
+        gap: 0;
+        & p {
+            width: 269px;
+            font-size: $p-font-size-desktop;
+            line-height: 28px;
+        }
+        .redes {
+            gap: 36px;
+            i {
+                width: 18px;
+            }
+        }
+    }
+}
